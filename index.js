@@ -65,8 +65,8 @@ Level.prototype._close = function (callback) {
   callback()
 }
 
-Level.prototype._approximateSize = function() {
-  throw new Error('Not implemented')
+Level.prototype._approximateSize = function(start, end, cb) {
+    return cb(null, 0)
 }
 
 Level.prototype._isBuffer = isBuffer
